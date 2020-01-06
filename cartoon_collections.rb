@@ -10,9 +10,15 @@ def summon_captain_planet(planet_array)
   planet_array.map {|array| "#{array.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(array_calls)
+ if array_calls.count < 4
+  return false
+ end
+  
+  return true 
+
 end
+
 
 def find_the_cheese# code an argument here
   # the array below is here to help
